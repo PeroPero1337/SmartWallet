@@ -19,6 +19,8 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="225"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -36,19 +38,19 @@
             <Image Margin="5,15,15,15" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}"  HeightRequest="100"
                        MinimumHeightRequest="20" Aspect="AspectFit"/>
 
-            <Label Grid.Row="0" Text="Pozdravljeni" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black" FontSize="18" Margin="-10,45,20,10" />
-            <Label x:Name="greetTxt" Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black"  Margin="-10,70,20,10" FontAttributes="Bold" />
+            <Label Grid.Row="0" Text="Pozdravljeni" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black" FontSize="18" Margin="-10,35,20,10" />
+            <Label x:Name="greetTxt" Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black"  Margin="-10,55,20,10" FontAttributes="Bold" />
 
-            <StackLayout  Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="8" Margin="10,0,10,0">
+            <StackLayout  Grid.Row="2" Grid.Column="1" Grid.RowSpan="8" Grid.ColumnSpan="8" Margin="8,0,6,0">
                 <Label Text="Portfolio za trenutni mesec" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center" />
                 <Frame BorderColor="Black" CornerRadius="2">
-                    <microcharts1:ChartView HeightRequest="150"
+                    <microcharts1:ChartView HeightRequest="220"
                           VerticalOptions="Start"
                           HorizontalOptions="Fill" x:Name="chartView"/>
                 </Frame>
             </StackLayout>
 
-            <StackLayout  Margin="50,10,50,10" Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="10">
+            <StackLayout  Margin="50,10,50,5" Grid.Row="8" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="10">
                 <Label Text="Legenda:" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
                 <Frame BorderColor="Black" BackgroundColor="#dbdbdb" CornerRadius="2">
                     <ScrollView VerticalScrollBarVisibility="Always" HeightRequest="200" >
@@ -58,6 +60,20 @@
                     </ScrollView>
                 </Frame>
             </StackLayout>
+            
+            
+            
+            
+            <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+            <BoxView Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
 
         </Grid>
     </ScrollView>
