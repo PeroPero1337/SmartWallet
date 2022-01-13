@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartWallet.RegistrationPage">
+             x:Class="SmartWallet.RegistrationPage"
+             xmlns:local="clr-namespace:SmartWallet.Models"
+             Title="Registracija">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="30,40,30,50">
-                <Label HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" FontSize="35" >Naslov aplikacije</Label>
+                <Label Text="SmartWallet" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" FontSize="35" />
                 <Image x:Name="logo" 
-                       Source="https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg" 
+                       Source="{local:ImageResource SmartWallet.Images.smartWallet.png}" 
                        Aspect="AspectFit"
                        HeightRequest="75"
                        MinimumHeightRequest="20"/>

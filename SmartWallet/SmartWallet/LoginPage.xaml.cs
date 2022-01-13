@@ -28,6 +28,7 @@ namespace SmartWallet
             linkPrivacy.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkPrivacy_Clicked()));
             linkTerms.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkTerms_Clicked()));
             linkAbout.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkAbout_Clicked()));
+            
         }
 
 
@@ -46,10 +47,12 @@ namespace SmartWallet
 
                 if (txtUsername.Text == data["uporabnisko_ime"].ToString() && hash.GetHashString(txtPassword.Text) == data["geslo"].ToString())
                 {
-
+                    
                     Uporabnik.SetUser(int.Parse(data["iduporabnik"].ToString()));
                     conn.CloseConnection();
                     await Navigation.PushAsync(new MainPage());
+                    txtUsername.Text = null;
+                    txtPassword.Text = null;
                 }
                 else
                     await DisplayAlert("Neuspešna prijava", "Napačno uporabniško ime ali geslo!", "Zapri");
@@ -59,7 +62,7 @@ namespace SmartWallet
             }
             catch(Exception ex)
             {
-                await DisplayAlert("error", ex.ToString(), "ok");
+                await DisplayAlert("Neuspešna prijava", "Napačno uporabniško ime ali geslo!", "Zapri");
             }
             
 

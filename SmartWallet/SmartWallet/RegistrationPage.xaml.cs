@@ -19,6 +19,28 @@ namespace SmartWallet
             InitializeComponent();
         }
 
+        private bool checkPolja()
+        {
+
+            if (String.IsNullOrEmpty(txtIme.Text) || String.IsNullOrWhiteSpace(txtIme.Text))
+                return false;
+            else if (String.IsNullOrEmpty(txtPriimek.Text) || String.IsNullOrWhiteSpace(txtPriimek.Text))
+                return false;
+            else if (String.IsNullOrEmpty(txtEmail.Text) || String.IsNullOrWhiteSpace(txtEmail.Text))
+                return false;
+            else if (String.IsNullOrEmpty(txtUsername.Text) || String.IsNullOrWhiteSpace(txtUsername.Text))
+                return false;
+            else if (String.IsNullOrEmpty(txtPassword.Text) || String.IsNullOrWhiteSpace(txtPassword.Text))
+                return false;
+            else if (String.IsNullOrEmpty(txtPassCheck.Text) || String.IsNullOrWhiteSpace(txtPassCheck.Text))
+                return false;
+            else
+                return true;
+
+
+
+        }
+
         [Obsolete]
         private async void btnRegister_Clicked(object sender, EventArgs e)
         {
@@ -35,30 +57,37 @@ namespace SmartWallet
             {
                 mails.Add(data["email"].ToString());
             }
+            connection.CloseConnection();
 
-
-            if (mails.Any(x => x.ToString() == txtEmail.Text))
+            if (checkPolja())
             {
-                await DisplayAlert("Napaka", "Mail ze obstaja!", "Ok");
-            }
-            else
-            {
-                if (txtPassword.Text == txtPassCheck.Text)
-                {
-                    string query = $"insert into uporabnik (ime,priimek,uporabnisko_ime,email,geslo) values('{txtIme.Text}','{txtPriimek.Text}','{txtUsername.Text}','{txtEmail.Text}','{hash.GetHashString(txtPassword.Text)}')";
-                    connection.ExecuteQueries(query);
-                    connection.CloseConnection();
-                    await DisplayAlert("Success", "Uporabnik registriran", "Ok");
-                    await Navigation.PushAsync(new LoginPage());
-                }
+                if (mails.Any(x => x.ToString() == txtEmail.Text))
+                    await DisplayAlert("Napaka", "Mail ze obstaja!", "Ok");
                 else
                 {
-                    connection.CloseConnection();
-                    await DisplayAlert("Napaka", "Gesli se morata ujemati", "Ok");
-                    await Navigation.PushAsync(new RegistrationPage());
+                    if (txtPassword.Text == txtPassCheck.Text)
+                    {
+                        if (radioTOU.IsChecked == true)
+                        {
+                            connection.OpenConnection();
+                            string query = $"insert into uporabnik (ime,priimek,uporabnisko_ime,email,geslo) values('{txtIme.Text}','{txtPriimek.Text}','{txtUsername.Text}','{txtEmail.Text}','{hash.GetHashString(txtPassword.Text)}')";
+                            connection.ExecuteQueries(query);
+                            connection.CloseConnection();
+                            await DisplayAlert("Success", "Uporabnik registriran", "OK");
+                            await Navigation.PopAsync();
+                        }
+                        else
+                            await DisplayAlert("Napaka", "Prosim strinjajte se z pogoji uporabe", "OK");
+
+
+                    }
+                    else
+                        await DisplayAlert("Napaka", "Gesli se morata ujemati", "OK");
                 }
             }
-            
+            else
+                await DisplayAlert("Napaka", "Obrazec ni pravilno izpolnjen", "OK");
+
 
 
 

@@ -96,7 +96,10 @@ namespace SmartWallet
             connection.CloseConnection();
             connection.OpenConnection();
             if (connection.ExecuteQueries2(update))
+            {
                 DisplayAlert("Strategija varčevanja", $"Izbrana strategija varčevanja: {pickerStrategija.Items[pickerStrategija.SelectedIndex]}", "Zapri");
+                Navigation.PushAsync(new SavingsPage());
+            }
             else
                 DisplayAlert("Napaka", $"Prišlo je do napake", "Zapri");
 

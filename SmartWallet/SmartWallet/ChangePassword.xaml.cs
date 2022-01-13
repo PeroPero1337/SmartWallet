@@ -22,18 +22,23 @@ namespace SmartWallet
 
         private async void btnChange_Clicked(object sender, EventArgs e)
         {
-            Hasher hash = new Hasher();
-            connection.OpenConnection();
-            var userId = Uporabnik._id;
+            if (string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+                await DisplayAlert("Obvestilo", "Prosim vnesite novo geslo!", "OK");
+            else
+            {
+                Hasher hash = new Hasher();
+                connection.OpenConnection();
+                var userId = Uporabnik._id;
 
-            string query = $"update uporabnik set geslo = '{hash.GetHashString(txtPassword.Text)}' where iduporabnik = {userId}";
+                string query = $"update uporabnik set geslo = '{hash.GetHashString(txtPassword.Text)}' where iduporabnik = {userId}";
 
-            await DisplayAlert("Password changed", "Vaše geslo je spremenjeno!", "ok");
+                await DisplayAlert("Obvestilo", "Vaše geslo je spremenjeno!", "ok");
 
-            connection.ExecuteQueries(query);
-            connection.CloseConnection();
+                connection.ExecuteQueries(query);
+                connection.CloseConnection();
 
-            await this.Navigation.PopAsync();
+                await this.Navigation.PopAsync();
+            }
         }
     }
 }

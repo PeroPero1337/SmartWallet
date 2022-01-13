@@ -39,6 +39,8 @@ namespace SmartWallet
 
         private void btnUpdate_Clicked(object sender, EventArgs e)
         {
+            txtPrisparano.Text = "Vrednost: ";
+            txtPorabljeno.Text = "Vrednost: ";
             var userId = Uporabnik._id;
             
             var datum_porabljeno_od = datePickerPorabljenoSkupajOD.Date.ToString("yyyy-MM-dd");

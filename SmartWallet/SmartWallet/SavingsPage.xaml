@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local1 ="clr-namespace:SmartWallet.Models"
-             x:Class="SmartWallet.SavingsPage">
+             x:Class="SmartWallet.SavingsPage"
+             Title="Varčevanje">
     <ContentPage.Content>
         <Grid BackgroundColor="White">
             <Grid.RowDefinitions>

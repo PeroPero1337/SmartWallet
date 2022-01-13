@@ -19,6 +19,8 @@ namespace SmartWallet
             InitializeComponent();
             connection = new ConnectionClass();
 
+            
+
             connection.OpenConnection();
             string query = $"select uporabnisko_ime, ime, priimek, email from uporabnik where iduporabnik = {Uporabnik._id}";
             var data2 = connection.DataReader(query);
@@ -50,9 +52,9 @@ namespace SmartWallet
                 pickerKategorija.Items.Add(item);
             }
 
-            
 
-            
+            pickerKategorija.SelectedIndex = 4;
+
 
 
         }
