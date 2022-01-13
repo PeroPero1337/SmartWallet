@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartWallet.RegistrationPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30,40,30,50">
+                <Label HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" FontSize="35" >Naslov aplikacije</Label>
+                <Image x:Name="logo" 
+                       Source="https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg" 
+                       Aspect="AspectFit"
+                       HeightRequest="75"
+                       MinimumHeightRequest="20"/>
+                <Frame BorderColor="Black" BackgroundColor="#dbdbdb">
+                    <StackLayout Padding="10,10,10,10">
+                        <Label Padding="0,0,0,-10">Ime:</Label>
+                        <Entry x:Name="txtIme" />
+                        <Label Padding="0,0,0,-10">Priimek:</Label>
+                        <Entry x:Name="txtPriimek" />
+                        <Label Padding="0,0,0,-10">E-naslov:</Label>
+                        <Entry x:Name="txtEmail" />
+                        <Label Padding="0,0,0,-10">Uporabniško ime:</Label>
+                        <Entry x:Name="txtUsername" />
+                        <Label Padding="0,0,0,-10">Geslo:</Label>
+                        <Entry x:Name="txtPassword" IsPassword="True" />
+                        <Label Padding="0,0,0,-10">Ponovi geslo:</Label>
+                        <Entry x:Name="txtPassCheck" IsPassword="True"/>
+                        <RadioButton Padding="0,10,0,20" x:Name="radioTOU" Content="Strinjam se s pogoji" />
+                        <Button x:Name="btnRegister" Text="Registracija" BackgroundColor="White" BorderColor="Black" Clicked="btnRegister_Clicked"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

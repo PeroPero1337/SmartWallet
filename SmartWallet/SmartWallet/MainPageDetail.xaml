@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartWallet.MainPageDetail" xmlns:local="clr-namespace:SmartWallet" xmlns:local1="clr-namespace:SmartWallet.Models"
+             Title="Nadzorna plošča"
+             xmlns:microcharts1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             >
+
+    <ScrollView>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Margin="5,15,15,15" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}"  HeightRequest="100"
+                       MinimumHeightRequest="20" Aspect="AspectFit"/>
+            <Label x:Name="greetTxt" Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black"  Margin="-10,45,20,10" FontAttributes="Bold">
+
+            </Label>
+            
+            <StackLayout  Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="8">
+                <Label Text="Portfolio za trenutni mesec" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center" />
+                <Frame BorderColor="Black">
+                    <microcharts1:ChartView HeightRequest="150"
+                          VerticalOptions="Start"
+                          HorizontalOptions="Fill" x:Name="chartView"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout  Margin="50,10,50,10" Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="10">
+                <Label Text="Legenda:" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                <Frame BorderColor="LightGray" BackgroundColor="LightGray" CornerRadius="5">
+                    <ScrollView VerticalScrollBarVisibility="Always" HeightRequest="200" >
+                        <StackLayout Margin="15,15,15,15" x:Name="stackMain">
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

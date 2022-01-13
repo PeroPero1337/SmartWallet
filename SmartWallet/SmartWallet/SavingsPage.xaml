@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local1 ="clr-namespace:SmartWallet.Models"
+             x:Class="SmartWallet.SavingsPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="15,15,15,15" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}"  HeightRequest="100"
+                       MinimumHeightRequest="20" Aspect="AspectFit"/>
+
+
+            <Label TextColor="Black" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="7" Margin="0,10,20,10" x:Name="greetTxt">
+                <!--5 vrstic se da not spravit da se vidi več ne-->
+            </Label>
+
+            <StackLayout Grid.Row="2" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="8">
+                <Label Text="Strategija: " TextColor="Black" FontSize="Large" FontAttributes="Bold" />
+                <Frame BackgroundColor="#dbdbdb" BorderColor="Black">
+                    <StackLayout>
+                        <Label Text="Izberi:" FontSize="Small" TextColor="Black" />
+                        <Picker x:Name="pickerStrategija" BackgroundColor="White" />
+                        <Button x:Name="btnIzberi" Text="Izberi" Margin="40,5,40,0" BackgroundColor="White" Clicked="btnIzberi_Clicked" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="8" Grid.RowSpan="4">
+                <Label Text="O strategijah:" TextColor="Black" FontSize="Large" FontAttributes="Bold" />
+                <Frame BorderColor="LightGray" BackgroundColor="LightGray" CornerRadius="15">
+                    <ScrollView VerticalScrollBarVisibility="Always" HeightRequest="200" Margin="-15,-15,-15,-15">
+                        <StackLayout x:Name="stackStrategije" Margin="15,15,15,15">
+                            <!--<Frame BorderColor="Black" CornerRadius="20" >
+                                <Label HorizontalTextAlignment="Center" TextColor="Black" >INFO</Label>
+                            </Frame>
+                            <Frame BorderColor="Black" CornerRadius="20">
+                                <Label HorizontalTextAlignment="Center" TextColor="Black" >INFO</Label>
+                            </Frame>
+                            <Frame BorderColor="Black" CornerRadius="20">
+                                <Label HorizontalTextAlignment="Center" TextColor="Black" >INFO</Label>
+                            </Frame>
+                            <Frame BorderColor="Black" CornerRadius="20">
+                                <Label HorizontalTextAlignment="Center" TextColor="Black" >INFO</Label>
+                            </Frame>
+                            <Frame BorderColor="Black" CornerRadius="20">
+                                <Label HorizontalTextAlignment="Center" TextColor="Black" >INFO</Label>
+                            </Frame>-->
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+            
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

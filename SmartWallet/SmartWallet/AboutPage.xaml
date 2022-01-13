@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartWallet.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ABOUT!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Margin="10,25,10,10">
+                <!--AboutPage.xaml.cs ko se inicializira tam nastav da so linki clickable-->
+                <Label x:Name="linkPrivacy" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik zasebnosti</Label>
+
+                <Label x:Name="linkTerms" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik uporabe</Label>
+
+                <Label x:Name="linkAbout" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">About</Label>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

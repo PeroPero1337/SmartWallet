@@ -1,0 +1,84 @@
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.deps.json
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.pdb
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.GeneratedMSBuildEditorConfig.editorconfig
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfoInputs.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfo.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.CoreCompileInputs.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\XamlC.stamp
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.pdb
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\AboutPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PrivacyPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\TermsPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageDetail.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageFlyout.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\DataPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PortfolioPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SavingsPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.AssemblyReference.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ChangePassword.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.deps.json
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.dll
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\ref\SmartWallet.dll
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.pdb
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.AssemblyReference.cache
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\AboutPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ChangePassword.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\DataPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageDetail.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageFlyout.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PortfolioPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PrivacyPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SavingsPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\TermsPage.xaml.g.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfoInputs.cache
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfo.cs
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.CoreCompileInputs.cache
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.dll
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ref\SmartWallet.dll
+C:\Users\Tilen\Desktop\3letnik\RMR\smartwallet\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.pdb
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.deps.json
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.pdb
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.AssemblyReference.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.GeneratedMSBuildEditorConfig.editorconfig
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\AboutPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ChangePassword.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\DataPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageDetail.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageFlyout.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PortfolioPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PrivacyPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SavingsPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\TermsPage.xaml.g.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfoInputs.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfo.cs
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.CoreCompileInputs.cache
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\XamlC.stamp
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.pdb

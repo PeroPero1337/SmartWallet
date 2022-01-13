@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartWallet"
+             xmlns:local1="clr-namespace:SmartWallet.Models"
+             x:Class="SmartWallet.DataPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="110" />
+                    <RowDefinition Height="430" />
+                    <RowDefinition Height="370" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="115" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Grid.Row="0" Margin="15,15,15,15" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}" HeightRequest="100"
+                       MinimumHeightRequest="20" Aspect="AspectFit"/>
+
+                <Label x:Name="greetTxt" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,40,0,0">
+                    <!--5 vrstic se da not spravit da se vidi več ne-->
+                    
+                </Label>
+
+                <Frame Margin="30,10,30,10" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#dbdbdb" BorderColor="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="158" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Stroški" TextColor="Black" FontSize="Large" Grid.Row="0" Grid.ColumnSpan="2" />
+
+
+                        <!--<Picker x:Name="pickerStroski" Title="Strošek" TextColor="Black" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="White"/>-->
+
+                        <Entry x:Name="txtStrosek" Grid.Row="1" Placeholder="Naziv" Grid.ColumnSpan="2" BackgroundColor="White" />
+
+                        <Picker x:Name="pickerKategorija" Title="Kategorija" Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="White" />
+                        <!--datePickerju dodaj pol se sliko za datum zravn-->
+                       
+                        <Label Text="Datum:" TextColor="Black" FontSize="Small" Grid.Row="3" Grid.ColumnSpan="2" Margin="3,25,0,0" />
+                        <DatePicker x:Name="datePickerStroski" Grid.Row="4" Grid.ColumnSpan="2" BackgroundColor="White" />
+                        
+                        <Label Text="Vrednost:" TextColor="Black" FontSize="Small" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,13,0,0"/>
+
+                        <Entry x:Name="txtVrednostStrosek" Grid.Row="6" Grid.ColumnSpan="2" BackgroundColor="White" />
+
+                        <Button x:Name="btnAddFixStroski" Grid.ColumnSpan="2" Grid.Row="7" Text="Dodaj" Margin="7,7,15,7" BackgroundColor="White" FontSize="Micro" FontAttributes="Bold" Clicked="btnAddFixStroski_Clicked" />
+
+
+                    </Grid>
+                </Frame>
+
+                <Frame Margin="30,10,30,10" Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="#dbdbdb" BorderColor="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="42" />
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="158" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Text="Prihodek" TextColor="Black" FontSize="Large" Grid.Row="0" Grid.ColumnSpan="2" />
+
+                        <!--<Picker x:Name="pickerPrihodek" Title="Prihodki" TextColor="Black" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="White"/>-->
+
+                        <Entry x:Name="txtPrihodek" Placeholder="Prihodek" TextColor="Black" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="White"  />
+                        <Label Text="Vrednost:" TextColor="Black" FontSize="Small" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,13,0,0" />
+
+
+                        <Entry x:Name="txtVrednostPrihodek" Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="White" />
+
+                        <Label Text="Datum:" Grid.Row="4" Grid.ColumnSpan="2" TextColor="Black" Margin="0,13,0,0"/>
+                        <DatePicker x:Name="datePickerPrihodki" Grid.Row="5" Grid.ColumnSpan="2" BackgroundColor="White" />
+
+                        <Button x:Name="btnAddFixPrihodki" Grid.ColumnSpan="2" Grid.Row="6" Text="Dodaj" Margin="7,7,15,7" BackgroundColor="White" FontSize="Micro" FontAttributes="Bold" Clicked="btnAddFixPrihodki_Clicked" />
+
+                    </Grid>
+
+                </Frame>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

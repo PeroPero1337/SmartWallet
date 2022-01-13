@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:SmartWallet.Models"
+             x:Class="SmartWallet.ProfilePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="70"/> 
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="70"/> 
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <StackLayout Grid.Row="0" Grid.Column="3" Grid.RowSpan="4" Grid.ColumnSpan="4">
+                    <Image Source="{local:ImageResource SmartWallet.Images.smartWallet.png}" Aspect="AspectFit"  />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="8" Margin="13,0,0,0">
+                    <Label x:Name="txtGreetings" TextColor="Black" Margin="0,0,0,0" FontAttributes="Bold">
+                        <!--5 vrstic se da not spravit da se vidi več ne-->
+
+                    </Label>
+                    <Label x:Name="txtGreetingsEmail" TextColor="Black" Margin="0,0,0,0">
+                        <!--5 vrstic se da not spravit da se vidi več ne-->
+
+                    </Label>
+                    <Label x:Name="txtGreetingsUname" TextColor="Black" Margin="0,0,0,0">
+                        <!--5 vrstic se da not spravit da se vidi več ne-->
+
+                    </Label>
+                </StackLayout>
+
+                <!--Porabljeno-->
+                <Grid Grid.Row="5" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="8" Margin="0,-10,0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Skupaj porabljeno" TextColor="Black" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,0,10" />
+
+                    <StackLayout Grid.Row="1" Grid.Column="0">
+                        <Label Text="Od:"/>
+                        <DatePicker x:Name="datePickerPorabljenoSkupajOD"  />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Label Text="Do:"/>
+                        <DatePicker x:Name="datePickerPorabljenoSkupajDO" />
+                    </StackLayout>
+
+                    <Label x:Name="txtPorabljeno" Text="Vrednost: " TextColor="Black" FontAttributes="Bold" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,0,0"></Label>
+                </Grid>
+
+                <!--Prisparano-->
+                <Grid Grid.Row="7" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="8" Margin="0,0,0,10" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Skupaj privarčevano" TextColor="Black" FontSize="Large" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,0,10" />
+
+                    <StackLayout Grid.Row="1" Grid.Column="0">
+                        <Label Text="Od:"/>
+                        <DatePicker x:Name="datePickerPrisparanoSkupajOD"  />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Label Text="Do:"/>
+                        <DatePicker x:Name="datePickerPrisparanoSkupajDO" />
+                    </StackLayout>
+
+                    <Label x:Name="txtPrisparano" Text="Vrednost: " TextColor="Black" FontAttributes="Bold" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,10,0,0"></Label>
+                </Grid>
+
+
+
+                <Button x:Name="btnUpdate" Text="Posodobi Podatke" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4" Clicked="btnUpdate_Clicked" />
+                <Button x:Name="btnChangePass" Text="Spremeni geslo" Grid.Row="9" Grid.Column="5" Grid.ColumnSpan="4" Clicked="btnChangePass_Clicked"/>
+
+
+                <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="10" HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End" HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+                <BoxView Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+
+                <BoxView Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="10"  HeightRequest="1" VerticalOptions="End"  HorizontalOptions="FillAndExpand"/>
+
+                <BoxView Grid.Column="0" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="1" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="2" Grid.Row="0" Grid.RowSpan="10" WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="3" Grid.Row="0" Grid.RowSpan="10"  WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="4" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="5" Grid.Row="0" Grid.RowSpan="10"  WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="6" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="7" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="8" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+                <BoxView Grid.Column="9" Grid.Row="0" Grid.RowSpan="10"   WidthRequest="1" VerticalOptions="FillAndExpand" HorizontalOptions="End"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

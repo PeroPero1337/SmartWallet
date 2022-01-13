@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local1="clr-namespace:SmartWallet.Models"
+             x:Class="SmartWallet.PortfolioPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="110" />
+                    <RowDefinition Height="240" />
+                    <RowDefinition Height="300" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="115" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Grid.Row="0" Margin="15,15,15,15" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}" HeightRequest="100"
+                       MinimumHeightRequest="20" Aspect="AspectFit"/>
+
+
+                <Label x:Name="txtGreetings" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,10,20,10">
+                    <!--5 vrstic se da not spravit da se vidi več ne-->
+                    
+                </Label>
+
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="2"  Margin="20,10,20,10">
+                    <Label Text="Pregled" FontSize="Large" TextColor="Black" />
+                    <Frame BorderColor="Black" BackgroundColor="#dbdbdb">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="2" Margin="-50,0,0,0">
+                                <Label Text="Do:" FontSize="Small" />
+                                <DatePicker x:Name="datePickerPortfolioDo" BackgroundColor="White" />
+
+                            </StackLayout>
+                            
+                            <StackLayout Grid.Row="0" Grid.ColumnSpan="1" Margin="0,0,-50,0">
+                                <Label Text="Od:" FontSize="Small" />
+                                <DatePicker x:Name="datePickerPortfolioOd" BackgroundColor="White" />
+                            </StackLayout>
+                            
+                            
+
+                            <RadioButton x:Name="radioStroski" Grid.Row="1" Grid.Column="0" FontSize="Small" Content="Stroški"/>
+                            <RadioButton x:Name="radioPrihodki" Grid.Row="1" Grid.Column="1" FontSize="Small" Content="Prihodki"/>
+                            <Button x:Name="btnIsci" Grid.Row="1" Grid.Column="2" FontSize="Micro" FontAttributes="Bold" Text="Išči" BackgroundColor="White" Margin="0,10,0,0" Clicked="btnIsci_Clicked"/>
+
+
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="20,10,20,10">
+                    <Label Text="Rezultati" FontSize="Large" TextColor="Black" />
+                    <Frame>
+                        <ScrollView VerticalScrollBarVisibility="Always" HeightRequest="200" Margin="-15,-15,-15,-15">
+                            <StackLayout x:Name="stackPortfolio" Margin="15,15,15,15">
+                                <!--<Frame BorderColor="Black" CornerRadius="20" >
+                                    <Label HorizontalTextAlignment="Center" TextColor="Black" >Data (naziv,znesek,kategorija)</Label>
+                                </Frame>
+                                <Frame BorderColor="Black" CornerRadius="20">
+                                    <Label HorizontalTextAlignment="Center" TextColor="Black" >Data (naziv,znesek,kategorija)</Label>
+                                </Frame>
+                                <Frame BorderColor="Black" CornerRadius="20">
+                                    <Label HorizontalTextAlignment="Center" TextColor="Black" >Data (naziv,znesek,kategorija)</Label>
+                                </Frame>
+                                <Frame BorderColor="Black" CornerRadius="20">
+                                    <Label HorizontalTextAlignment="Center" TextColor="Black" >Data (naziv,znesek,kategorija)</Label>
+                                </Frame>
+                                <Frame BorderColor="Black" CornerRadius="20">
+                                    <Label HorizontalTextAlignment="Center" TextColor="Black" >Data (naziv,znesek,kategorija)</Label>
+                                </Frame>-->
+                            </StackLayout>
+                        </ScrollView>
+                    </Frame>
+                </StackLayout>
+                
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
