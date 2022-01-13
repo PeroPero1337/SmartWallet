@@ -22,7 +22,7 @@ namespace SmartWallet
             string query = $"select uporabnisko_ime from uporabnik where iduporabnik = {Uporabnik._id}";
             var data = connection.DataReader(query);
             data.Read();
-            txtGreetings.Text = $"Pozrdavljen {data["uporabnisko_ime"].ToString()}";
+            txtGreetings.Text = $"{data["uporabnisko_ime"].ToString()}";
             connection.CloseConnection();
         }
 
@@ -35,9 +35,9 @@ namespace SmartWallet
             {
                 var ime = data["ime_podatek"].ToString();
                 var cena = data["cena"].ToString();
-                var datum = data["datum"].ToString();
+                var datum = DateTime.Parse(data["datum"].ToString()).ToString("dd/MM/yyyy");
 
-                podatki.Add($"{ime};{cena};{datum}");
+                podatki.Add($"Naziv: {ime};Znesek: {cena}€;Datum: {datum}");
             }
             connection.CloseConnection();
 
@@ -46,12 +46,12 @@ namespace SmartWallet
                 Frame frame = new Frame
                 {
                     BorderColor = Color.Black,
-                    CornerRadius = 20,
+                    CornerRadius = 2,
                     Content = new Label
                     {
                         HorizontalTextAlignment = TextAlignment.Center,
                         TextColor = Color.Black,
-                        Text = item
+                        Text = item.Replace(';', '\n')
                     }
                 };
 

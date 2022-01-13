@@ -1,20 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartWallet.AboutPage">
+             x:Class="SmartWallet.AboutPage"
+             xmlns:local="clr-namespace:SmartWallet.Models"
+             Title="About">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="ABOUT!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <StackLayout Margin="10,25,10,10">
-                <!--AboutPage.xaml.cs ko se inicializira tam nastav da so linki clickable-->
-                <Label x:Name="linkPrivacy" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik zasebnosti</Label>
-
-                <Label x:Name="linkTerms" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik uporabe</Label>
-
-                <Label x:Name="linkAbout" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">About</Label>
-
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" Margin="0,80,0,0">
+            <Image Source="{local:ImageResource SmartWallet.Images.smartWallet.png}" WidthRequest="120"/>
+            <StackLayout Margin="0,50,0,0">
+                <Label TextColor="#006b8b" Text="Razvoj mobilnih rešitev" HorizontalTextAlignment="Center" />
+                <Label TextColor="#006b8b" Text="ITK VS" HorizontalTextAlignment="Center" />
+                <Label TextColor="#006b8b" Text="Version 1.1" HorizontalTextAlignment="Center" />
+                <Label TextColor="#006b8b" Text="2022 © Peter Pecl, Tilen Potočnik, Nejc Tevč" HorizontalTextAlignment="Center" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

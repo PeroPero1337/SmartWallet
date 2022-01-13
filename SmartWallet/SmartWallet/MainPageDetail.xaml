@@ -35,13 +35,13 @@
 
             <Image Margin="5,15,15,15" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}"  HeightRequest="100"
                        MinimumHeightRequest="20" Aspect="AspectFit"/>
-            <Label x:Name="greetTxt" Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black"  Margin="-10,45,20,10" FontAttributes="Bold">
 
-            </Label>
-            
-            <StackLayout  Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="8">
+            <Label Grid.Row="0" Text="Pozdravljeni" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black" FontSize="18" Margin="-10,45,20,10" />
+            <Label x:Name="greetTxt" Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="Black"  Margin="-10,70,20,10" FontAttributes="Bold" />
+
+            <StackLayout  Grid.Row="2" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="8" Margin="10,0,10,0">
                 <Label Text="Portfolio za trenutni mesec" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center" />
-                <Frame BorderColor="Black">
+                <Frame BorderColor="Black" CornerRadius="2">
                     <microcharts1:ChartView HeightRequest="150"
                           VerticalOptions="Start"
                           HorizontalOptions="Fill" x:Name="chartView"/>
@@ -49,10 +49,10 @@
             </StackLayout>
 
             <StackLayout  Margin="50,10,50,10" Grid.Row="6" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="10">
-                <Label Text="Legenda:" FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
-                <Frame BorderColor="LightGray" BackgroundColor="LightGray" CornerRadius="5">
+                <Label Text="Legenda:" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
+                <Frame BorderColor="Black" BackgroundColor="#dbdbdb" CornerRadius="2">
                     <ScrollView VerticalScrollBarVisibility="Always" HeightRequest="200" >
-                        <StackLayout Margin="15,15,15,15" x:Name="stackMain">
+                        <StackLayout Margin="5,5,5,5" x:Name="stackMain">
 
                         </StackLayout>
                     </ScrollView>

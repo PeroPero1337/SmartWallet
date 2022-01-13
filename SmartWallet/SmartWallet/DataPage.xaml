@@ -8,7 +8,7 @@
         <ScrollView>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="110" />
+                    <RowDefinition Height="130" />
                     <RowDefinition Height="430" />
                     <RowDefinition Height="370" />
                 </Grid.RowDefinitions>
@@ -17,13 +17,18 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Image Grid.Column="0" Grid.Row="0" Margin="15,15,15,15" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}" HeightRequest="100"
+                <Image Grid.Column="0" Grid.Row="0" Margin="30,15,15,15" Source="{local1:ImageResource SmartWallet.Images.smartWallet.png}" HeightRequest="100"
                        MinimumHeightRequest="20" Aspect="AspectFit"/>
 
-                <Label x:Name="greetTxt" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,40,0,0">
+                <Label TextColor="Black" Grid.Row="0" Grid.Column="1" FontSize="18" Margin="15,40,20,0">
+                    <!--5 vrstic se da not spravit da se vidi več ne-->
+                    Dodajanje podatkov za osebo:
+                </Label>
+                <Label x:Name="greetTxt" TextColor="Black" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" Margin="15,67,20,0">
                     <!--5 vrstic se da not spravit da se vidi več ne-->
                     
                 </Label>
+                
 
                 <Frame Margin="30,10,30,10" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#dbdbdb" BorderColor="Black">
                     <Grid>

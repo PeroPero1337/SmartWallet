@@ -39,6 +39,8 @@ namespace SmartWallet
 
             var myStack = stackStrategije;
 
+            pickerStrategija.SelectedIndex = 0;
+
             connection.OpenConnection();
 
             var list = new List<string>();
@@ -60,12 +62,12 @@ namespace SmartWallet
                 Frame frame = new Frame
                 {
                     BorderColor = Color.Black,
-                    CornerRadius = 20,
+                    CornerRadius = 2,
                     Content = new Label
                     {
                         HorizontalTextAlignment = TextAlignment.Center,
                         TextColor = Color.Black,
-                        Text = item
+                        Text = item.Replace(';', '\n')
                     }
                 };
 
@@ -101,7 +103,7 @@ namespace SmartWallet
 
             connection.CloseConnection();
 
-            pickerStrategija.SelectedIndex = -1;
+            pickerStrategija.SelectedIndex = 0;
 
 
 

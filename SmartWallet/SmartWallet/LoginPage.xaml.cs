@@ -52,7 +52,7 @@ namespace SmartWallet
                     await Navigation.PushAsync(new MainPage());
                 }
                 else
-                    await DisplayAlert("fak yu", "no no mister, wrong somtin", "try again!");
+                    await DisplayAlert("Neuspešna prijava", "Napačno uporabniško ime ali geslo!", "Zapri");
 
 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj": {}
+    "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj": {}
   },
   "projects": {
-    "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj": {
+    "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
+        "projectUniqueName": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
         "projectName": "SmartWallet.iOS",
-        "projectPath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
+        "projectPath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
         "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\obj\\",
+        "outputPath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj": {
-                "projectPath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj"
+              "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj": {
+                "projectPath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj": {
+    "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj",
+        "projectUniqueName": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj",
         "projectName": "SmartWallet",
-        "projectPath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj",
+        "projectPath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\SmartWallet.csproj",
         "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet\\obj\\",
+        "outputPath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

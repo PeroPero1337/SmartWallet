@@ -23,7 +23,7 @@ namespace SmartWallet
             string query = $"select uporabnisko_ime, ime, priimek, email from uporabnik where iduporabnik = {Uporabnik._id}";
             var data2 = connection.DataReader(query);
             data2.Read();
-            greetTxt.Text = $"Dodajanje podatkov za osebo: {data2["ime"].ToString()} {data2["priimek"].ToString()}";
+            greetTxt.Text = $"{data2["ime"].ToString()} {data2["priimek"].ToString()}";
             greetTxt.FontSize = 18;
             
             connection.CloseConnection();

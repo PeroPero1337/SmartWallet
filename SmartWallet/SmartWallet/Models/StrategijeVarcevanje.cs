@@ -4,10 +4,13 @@ using System.Text;
 
 namespace SmartWallet.Models
 {
-    public class StrategijeVarcevanje
+    public static class StrategijeVarcevanje
     {
-        public int id { get; set; }
-        public string opis { get; set; }
-        public decimal procent_varcevanja { get; set; }
+        public static int _id;
+
+        public static void setVarcevanje(int id)
+        {
+            _id = id;
+        }
     }
 }

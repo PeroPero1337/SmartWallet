@@ -26,7 +26,7 @@ namespace SmartWallet
             string query = $"select uporabnisko_ime, ime, priimek, email from uporabnik where iduporabnik = {Uporabnik._id}";
             var data = connection.DataReader(query);
             data.Read();
-            greetTxt.Text = $"Pozdravljeni {data["ime"].ToString()} {data["priimek"].ToString()}";
+            greetTxt.Text = $"{data["ime"].ToString()} {data["priimek"].ToString()}";
             greetTxt.FontSize = 18;
             connection.CloseConnection();
 
@@ -130,7 +130,7 @@ namespace SmartWallet
                     {
                         HorizontalTextAlignment = TextAlignment.Center,
                         TextColor = Color.Black,
-                        Text = item
+                        Text = item.Replace(";", "\n")
                     }
                 };
 

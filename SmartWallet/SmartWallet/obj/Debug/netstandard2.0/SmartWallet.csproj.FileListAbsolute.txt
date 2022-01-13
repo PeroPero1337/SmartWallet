@@ -82,3 +82,31 @@ E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWalle
 E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.dll
 E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ref\SmartWallet.dll
 E:\School\FERI 3.letnik\RMR\Projektna\SmartWallet_update2\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.pdb
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.deps.json
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.dll
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\bin\Debug\netstandard2.0\SmartWallet.pdb
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.AssemblyReference.cache
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\AboutPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ChangePassword.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\DataPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ForgotPasswordPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageDetail.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\MainPageFlyout.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PortfolioPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\PrivacyPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SavingsPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\TermsPage.xaml.g.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfoInputs.cache
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.AssemblyInfo.cs
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.csproj.CoreCompileInputs.cache
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\XamlC.stamp
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.dll
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\ref\SmartWallet.dll
+E:\GitRepositories\SmartWallet\SmartWallet\SmartWallet\obj\Debug\netstandard2.0\SmartWallet.pdb

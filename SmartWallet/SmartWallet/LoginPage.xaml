@@ -22,7 +22,7 @@
                         <Button Margin="0,15,0,0" x:Name="btnLogin" Text="Prijava" Clicked="btnLogin_Clicked" ></Button>
                         <Button x:Name="btnRegister" Text="Registracija" Clicked="btnRegister_Clicked" ></Button>
 
-                        <Label Margin="0,15,0,0"  x:Name="linkLostPass" HorizontalTextAlignment="Center" Text="Spememba gesla" TextDecorations="Underline" TextColor="RoyalBlue">
+                        <Label Margin="0,15,0,0"  x:Name="linkLostPass" HorizontalTextAlignment="Center" Text="Pozabljeno geslo" TextDecorations="Underline" TextColor="RoyalBlue">
                             <!--Ta shit spodi ne dela-->
                             <!--<Label.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}" />

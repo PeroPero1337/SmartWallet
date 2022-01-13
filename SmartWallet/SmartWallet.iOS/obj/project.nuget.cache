@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ywFiwoCbLq8c3KbNeEjT2v7uAXiesOl//v+9rl7OLxou3/0E4wB3J5DHk7zWdJIhbWzbUdx1dAL8O6fh38U8dw==",
+  "dgSpecHash": "7B2A46Aj64wURGEq1b0QnA5QmmD2+M0h1NZSSvx+4eaZHHgAnKJ9XU9w7SD2leGLZTB2ulcOyUAsFGxlGT9l3w==",
   "success": true,
-  "projectFilePath": "E:\\School\\FERI 3.letnik\\RMR\\Projektna\\SmartWallet_update2\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
+  "projectFilePath": "E:\\GitRepositories\\SmartWallet\\SmartWallet\\SmartWallet.iOS\\SmartWallet.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peter\\.nuget\\packages\\microcharts\\0.9.5.9\\microcharts.0.9.5.9.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\microcharts.forms\\0.9.5.9\\microcharts.forms.0.9.5.9.nupkg.sha512",
