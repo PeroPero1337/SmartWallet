@@ -1,0 +1,2 @@
+# SmartWallet
+ School group project
