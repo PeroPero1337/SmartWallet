@@ -1,4 +1,4 @@
-# SmartWallet
+# SmartWallet(SmartAssistant)
  School group project
 
 SmartWallet(renaming to SmartAssistant) is a mobile application that helps you keep track of you income, outcome, bills etc.</br>
