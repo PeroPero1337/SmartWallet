@@ -7,7 +7,7 @@ It currently only works on iOS
 
 Group project by </br>
 Tilen - Project leader,</br>
-Nejc - in charge of database,</br>
+Nejc - database expert,</br>
 Peter - coder
 
 >Will be renamed to Smart Assistant or something similar soon, since it's not actually a wallet.
