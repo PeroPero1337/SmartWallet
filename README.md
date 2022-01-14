@@ -6,8 +6,8 @@ The application is being developed using Xamarin .</br>
 It currently only works on iOS
 
 Group project by </br>
-Tilen - Project leader,</br>
-Nejc - database expert,</br>
-Peter - coder
+Tilen - Project leader/coder,</br>
+Nejc - database expert/coder,</br>
+Peter - Main coder
 
 >Will be renamed to Smart Assistant or something similar soon, since it's not actually a wallet.
