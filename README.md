@@ -1,7 +1,7 @@
 # SmartWallet
  School group project
 
-SmartWallet(renaming to SmartAssistant) is a mobile application that helps you keep track of you income, outcome, bills ect.</br>
+SmartWallet(renaming to SmartAssistant) is a mobile application that helps you keep track of you income, outcome, bills etc.</br>
 The application is being developed using Xamarin .</br>
 It currently only works on iOS
 
@@ -10,4 +10,4 @@ Tilen - Project leader,</br>
 Nejc - in charge of database,</br>
 Peter - coder
 
->Will be renamed to Smart Assistant or something similar soon since it's not actually a wallet.
+>Will be renamed to Smart Assistant or something similar soon, since it's not actually a wallet.
