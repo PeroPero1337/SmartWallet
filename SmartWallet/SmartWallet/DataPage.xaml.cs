@@ -20,91 +20,117 @@ namespace SmartWallet
             connection = new ConnectionClass();
 
             
-
-            connection.OpenConnection();
-            string query = $"select uporabnisko_ime, ime, priimek, email from uporabnik where iduporabnik = {Uporabnik._id}";
-            var data2 = connection.DataReader(query);
-            data2.Read();
-            greetTxt.Text = $"{data2["ime"].ToString()} {data2["priimek"].ToString()}";
-            greetTxt.FontSize = 18;
-            
-            connection.CloseConnection();
-
-            connection.OpenConnection();
-
-            var data = connection.DataReader("select idkategorija, ime_kategorije from kategorija");
-            List<string> kategorija = new List<string>();
-
-            while (data.Read())
+            try
             {
-                //podatki.Add(data["ime_podatek"].ToString());
-                kategorija.Add(data["ime_kategorije"].ToString());
+                connection.OpenConnection();
+                string query = $"select uporabnisko_ime, ime, priimek, email from uporabnik where iduporabnik = {Uporabnik._id}";
+                var data2 = connection.DataReader(query);
+                data2.Read();
+                greetTxt.Text = $"{data2["ime"].ToString()} {data2["priimek"].ToString()}";
+                greetTxt.FontSize = 18;
+
+                connection.CloseConnection();
+
             }
-            connection.CloseConnection();
-
-            //foreach (var item in podatki)
-            //{
-            //    pickerStroski.Items.Add(item);
-            //}
-
-            foreach (var item in kategorija)
+            catch
             {
-                pickerKategorija.Items.Add(item);
+                DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
             }
 
 
-            pickerKategorija.SelectedIndex = 4;
+            try
+            {
+                connection.OpenConnection();
+
+                var data = connection.DataReader("select idkategorija, ime_kategorije from kategorija");
+                List<string> kategorija = new List<string>();
+
+                while (data.Read())
+                {
+                    //podatki.Add(data["ime_podatek"].ToString());
+                    kategorija.Add(data["ime_kategorije"].ToString());
+                }
+                connection.CloseConnection();
+
+                //foreach (var item in podatki)
+                //{
+                //    pickerStroski.Items.Add(item);
+                //}
+
+                foreach (var item in kategorija)
+                {
+                    pickerKategorija.Items.Add(item);
+                }
 
 
+                pickerKategorija.SelectedIndex = 4;
+
+            }
+            catch
+            {
+                DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
+            }
 
         }
 
         //1 - strosek 2 - prihodek
         private void btnAddFixStroski_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                var datum = datePickerStroski.Date.ToString("yyyy-MM-dd");
 
-            var datum = datePickerStroski.Date.ToString("yyyy-MM-dd");
+                connection.OpenConnection();
+                var data = connection.DataReader($"select idkategorija from kategorija where ime_kategorije = '{pickerKategorija.SelectedItem.ToString()}'");
+                data.Read();
+                var kategorija_id = data["idkategorija"].ToString();
+                connection.CloseConnection();
 
-            connection.OpenConnection();
-            var data = connection.DataReader($"select idkategorija from kategorija where ime_kategorije = '{pickerKategorija.SelectedItem.ToString()}'");
-            data.Read();
-            var kategorija_id = data["idkategorija"].ToString();
-            connection.CloseConnection();
+                connection.OpenConnection();
+                string query = $"insert into podatek (ime_podatek,cena,datum,uporabniki_iduporabniki,status_idstatus,kategorija_idkategorija) values('{txtStrosek.Text}','{Convert.ToDecimal(txtVrednostStrosek.Text.ToString().Replace(",","."))}','{datum}','{Uporabnik._id}',1,'{int.Parse(kategorija_id)}')";
 
-
-            connection.OpenConnection();
-            string query = $"insert into podatek (ime_podatek,cena,datum,uporabniki_iduporabniki,status_idstatus,kategorija_idkategorija) values('{txtStrosek.Text}','{Convert.ToDecimal(txtVrednostStrosek.Text.ToString())}','{datum}','{Uporabnik._id}',1,'{int.Parse(kategorija_id)}')";
-
-            if (connection.ExecuteQueries2(query) == true)
-                DisplayAlert("Uspešno!", "Strošek je bil uspešno dodan!", "Zapri");
-            else
-                DisplayAlert("Napaka!", "Prišlo je do napake!", "Zapri");
+                if (connection.ExecuteQueries2(query))
+                    DisplayAlert("Uspešno!", "Strošek je bil uspešno dodan!", "Zapri");
+                else
+                    DisplayAlert("Napaka!", "Prišlo je do napake!", "Zapri");
 
 
-            connection.CloseConnection();
+                connection.CloseConnection();
 
-            pickerKategorija.SelectedIndex = -1;
-            txtStrosek.Text = "";
-            txtVrednostStrosek.Text = "";
+                pickerKategorija.SelectedIndex = -1;
+                txtStrosek.Text = "";
+                txtVrednostStrosek.Text = "";
+            }
+            catch
+            {
+                DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
+            }
         }
 
         private void btnAddFixPrihodki_Clicked(object sender, EventArgs e)
         {
-            var datum = datePickerPrihodki.Date.ToString("yyyy-MM-dd");
+            try
+            {
+                var datum = datePickerPrihodki.Date.ToString("yyyy-MM-dd");
 
-            connection.OpenConnection();
+                connection.OpenConnection();
 
-            string query = $"insert into podatek (ime_podatek,cena,datum,uporabniki_iduporabniki,status_idstatus,kategorija_idkategorija) values('{txtPrihodek.Text}','{Convert.ToDecimal(txtVrednostPrihodek.Text.ToString())}','{datum}','{Uporabnik._id}',2,null)";
+                string query = $"insert into podatek (ime_podatek,cena,datum,uporabniki_iduporabniki,status_idstatus,kategorija_idkategorija) values('{txtPrihodek.Text}','{Convert.ToDecimal(txtVrednostPrihodek.Text.ToString().Replace(',','.'))}','{datum}','{Uporabnik._id}',2,null)";
 
-            if (connection.ExecuteQueries2(query) == true)
-                DisplayAlert("Uspešno!", "Prihodek je bil uspešno dodan!", "Zapri");
-            else
-                DisplayAlert("Napaka!", "Prišlo je do napake!", "Zapri");
+                if (connection.ExecuteQueries2(query))
+                    DisplayAlert("Uspešno!", "Prihodek je bil uspešno dodan!", "Zapri");
+                else
+                    DisplayAlert("Napaka!", "Prišlo je do napake!", "Zapri");
 
-            connection.CloseConnection();
+                connection.CloseConnection();
 
-            txtPrihodek.Text = "";
-            txtVrednostPrihodek.Text = "";
+                txtPrihodek.Text = "";
+                txtVrednostPrihodek.Text = "";
+            }
+            catch
+            {
+                DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
+            }
         }
     }
 }

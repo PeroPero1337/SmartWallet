@@ -29,26 +29,39 @@ namespace SmartWallet
 
         private async void btnReset_Clicked(object sender, EventArgs e)
         {
-            //TODO
-            //nared da poslje reset link ko bos vedu kak
-            ConnectionClass connection = new ConnectionClass();
-            connection.OpenConnection();
+           try
+           {
 
-            var data = connection.DataReader($"select email from uporabnik where email = '{txtEmail.Text}'");
-            data.Read();
-            connection.CloseConnection();
 
-            string tempPass = RandomString(8);
+                ConnectionClass connection = new ConnectionClass();
+                connection.OpenConnection();
 
-            Hasher hash = new Hasher();
+                var data = connection.DataReader($"select email from uporabnik where email = '{txtEmail.Text}'");
+                data.Read();
+                connection.CloseConnection();
 
-            connection.OpenConnection();
-            connection.ExecuteQueries($"update uporabnik set geslo = '{hash.GetHashString(tempPass)}' where email = '{txtEmail.Text}'");
-            connection.CloseConnection();
+                string tempPass = RandomString(8);
 
-            await DisplayAlert("Geslo spremenjeno", $"Novo geslo: {tempPass}", "Zapri");
-            await Navigation.PushAsync(new LoginPage());
+                Hasher hash = new Hasher();
 
+                connection.OpenConnection();
+                if(connection.ExecuteQueries2($"update uporabnik set geslo = '{hash.GetHashString(tempPass)}' where email = '{txtEmail.Text}'"))
+                {
+                    await DisplayAlert("Geslo spremenjeno", $"Novo geslo: {tempPass}", "Zapri");
+                }
+                else
+                {
+                    await DisplayAlert("Napaka", "Napaka pri spremembi gesla!", "Zapri");
+                }
+                connection.CloseConnection();
+
+            
+                await Navigation.PushAsync(new LoginPage());
+            }
+            catch
+            {
+                await DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
+            }
         }
     }
 }

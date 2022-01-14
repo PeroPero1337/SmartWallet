@@ -45,51 +45,67 @@ namespace SmartWallet
         private async void btnRegister_Clicked(object sender, EventArgs e)
         {
             //NoviTestniUser test123
-            Hasher hash = new Hasher();
-            ConnectionClass connection = new ConnectionClass();
-            connection.OpenConnection();
+            try
+            {
+                Hasher hash = new Hasher();
+                ConnectionClass connection = new ConnectionClass();
 
-            var data = connection.DataReader("select email from uporabnik");
+                connection.OpenConnection();
+
+                var data = connection.DataReader("select email from uporabnik");
             
-            List<string> mails = new List<string>();
+                List<string> mails = new List<string>();
 
-            while (data.Read())
-            {
-                mails.Add(data["email"].ToString());
-            }
-            connection.CloseConnection();
-
-            if (checkPolja())
-            {
-                if (mails.Any(x => x.ToString() == txtEmail.Text))
-                    await DisplayAlert("Napaka", "Mail ze obstaja!", "Ok");
-                else
+                while (data.Read())
                 {
-                    if (txtPassword.Text == txtPassCheck.Text)
+                    mails.Add(data["email"].ToString());
+                }
+                connection.CloseConnection();
+
+                if (checkPolja())
+                {
+                    if (mails.Any(x => x.ToString() == txtEmail.Text))
+                        await DisplayAlert("Napaka", "Ta email že obstaja!", "Ok");
+                    else
                     {
-                        if (radioTOU.IsChecked == true)
+                        if (txtPassword.Text == txtPassCheck.Text)
                         {
-                            connection.OpenConnection();
-                            string query = $"insert into uporabnik (ime,priimek,uporabnisko_ime,email,geslo) values('{txtIme.Text}','{txtPriimek.Text}','{txtUsername.Text}','{txtEmail.Text}','{hash.GetHashString(txtPassword.Text)}')";
-                            connection.ExecuteQueries(query);
-                            connection.CloseConnection();
-                            await DisplayAlert("Success", "Uporabnik registriran", "OK");
-                            await Navigation.PopAsync();
+                            if (radioTOU.IsChecked)
+                            {
+                                connection.OpenConnection();
+                                string query = $"insert into uporabnik (ime,priimek,uporabnisko_ime,email,geslo) values('{txtIme.Text}','{txtPriimek.Text}','{txtUsername.Text}','{txtEmail.Text}','{hash.GetHashString(txtPassword.Text)}')";
+                                if(connection.ExecuteQueries2(query))
+                                {
+                                    await DisplayAlert("Uspešno", "Uporabnik registriran!", "OK");
+                                    await Navigation.PopAsync();
+                                }
+                                else
+                                {
+                                    await DisplayAlert("Napaka!", "Uporabnik ni bil registriran!", "OK");
+                                }
+                                connection.CloseConnection();
+                                
+                            }
+                            else
+                            {
+                                await DisplayAlert("Napaka", "Prosim strinjajte se z pogoji uporabe", "OK");
+                            }
                         }
                         else
-                            await DisplayAlert("Napaka", "Prosim strinjajte se z pogoji uporabe", "OK");
-
-
+                        {
+                            await DisplayAlert("Napaka", "Gesli se morata ujemati", "OK");
+                        }      
                     }
-                    else
-                        await DisplayAlert("Napaka", "Gesli se morata ujemati", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Napaka", "Obrazec ni pravilno izpolnjen", "OK");
                 }
             }
-            else
-                await DisplayAlert("Napaka", "Obrazec ni pravilno izpolnjen", "OK");
-
-
-
+            catch
+            {
+                await DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
+            }
 
 
 

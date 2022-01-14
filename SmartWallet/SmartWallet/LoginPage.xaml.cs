@@ -60,9 +60,9 @@ namespace SmartWallet
 
 
             }
-            catch(Exception ex)
+            catch
             {
-                await DisplayAlert("Neuspešna prijava", "Napačno uporabniško ime ali geslo!", "Zapri");
+                await DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
             }
             
 

@@ -18,7 +18,7 @@ namespace SmartWallet
             InitializeComponent();
 
             linkPrivacy.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkPrivacy_Clicked()));
-            linkTerms.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkTerms_Clicked()));
+            prijava.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkTerms_Clicked()));
             linkAbout.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkAbout_Clicked()));
         }
 
@@ -31,7 +31,7 @@ namespace SmartWallet
         [Obsolete]
         private async void linkTerms_Clicked()
         {
-            await Navigation.PushAsync(new TermsPage());
+            await Navigation.PushAsync(new LoginPage());
 
         }
 

@@ -16,7 +16,7 @@ namespace SmartWallet
         public PrivacyPage()
         {
             InitializeComponent();
-            linkPrivacy.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkPrivacy_Clicked()));
+            login.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkPrivacy_Clicked()));
             linkTerms.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkTerms_Clicked()));
             linkAbout.GestureRecognizers.Add(new TapGestureRecognizer((view) => linkAbout_Clicked()));
         }
@@ -24,7 +24,7 @@ namespace SmartWallet
         [Obsolete]
         private async void linkPrivacy_Clicked()
         {
-            await Navigation.PushAsync(new PrivacyPage());
+            await Navigation.PushAsync(new LoginPage());
         }
 
         [Obsolete]

@@ -4,12 +4,21 @@
              x:Class="SmartWallet.PrivacyPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="PRIVACY"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Margin="10,25,10,10">
+                <Label x:Name="poltika" HorizontalTextAlignment="Center">
+                    Aplikacija je ne uporablja piškotkov saj so podatki varno shranjeni na strežniku.
+
+                </Label>
+                <Label HorizontalTextAlignment="Center">
+                    Informacije o lastništvu: Peter Pecl, Tilen Potočnik, Nejc Tevč
+                    Naslov: Univerza v Mariboru (RMR)
+                </Label>
+            </StackLayout>
             <StackLayout Margin="10,25,10,10">
                 <!--PrivacyPage.xaml.cs ko se inicializira tam nastav da so linki clickable-->
-                <Label x:Name="linkPrivacy" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik zasebnosti</Label>
+               
+
+                <Label x:Name="login" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Prijava</Label>
 
                 <Label x:Name="linkTerms" HorizontalTextAlignment="Center" TextDecorations="Underline" TextColor="RoyalBlue">Pravilnik uporabe</Label>
 

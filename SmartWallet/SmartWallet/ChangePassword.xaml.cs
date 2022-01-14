@@ -22,22 +22,35 @@ namespace SmartWallet
 
         private async void btnChange_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
-                await DisplayAlert("Obvestilo", "Prosim vnesite novo geslo!", "OK");
-            else
+            try
             {
-                Hasher hash = new Hasher();
-                connection.OpenConnection();
-                var userId = Uporabnik._id;
+                if (string.IsNullOrEmpty(txtPassword.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    await DisplayAlert("Obvestilo", "Prosim vnesite novo geslo!", "OK");
+                }  
+                else
+                {
+                    Hasher hash = new Hasher();
+                    connection.OpenConnection();
+                    var userId = Uporabnik._id;
 
-                string query = $"update uporabnik set geslo = '{hash.GetHashString(txtPassword.Text)}' where iduporabnik = {userId}";
+                    string query = $"update uporabnik set geslo = '{hash.GetHashString(txtPassword.Text)}' where iduporabnik = {userId}";
 
-                await DisplayAlert("Obvestilo", "Vaše geslo je spremenjeno!", "ok");
-
-                connection.ExecuteQueries(query);
-                connection.CloseConnection();
-
-                await this.Navigation.PopAsync();
+                    if(connection.ExecuteQueries2(query))
+                    {
+                        await DisplayAlert("Obvestilo", "Vaše geslo je spremenjeno!", "OK");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Obvestilo", "Napaka pri spremijanju gesla.", "Ok");
+                    }
+                    connection.CloseConnection();
+                    await this.Navigation.PopAsync();
+                }
+            }
+            catch
+            {
+                await DisplayAlert("Obvestilo", "Nepričakovana napaka! Poskusite ponovno kasneje!", "Ok");
             }
         }
     }
